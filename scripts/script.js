@@ -1,5 +1,4 @@
 
-
 function fade($ele) {
     $ele.fadeIn(1000).delay(3000).fadeOut(1000, function() {
         var $next = $(this).next('.quote');
@@ -19,7 +18,7 @@ $(window).scroll(function() {
     }
 });
 
-
+// Mobile Navigation
 $('.mobile-toggle').click(function() {
     if ($('.main_nav').hasClass('open-nav')) {
         $('.main_nav').removeClass('open-nav');
@@ -34,6 +33,7 @@ $('.main_nav li a').click(function() {
         $('.main_nav').removeClass('open-nav');
     }
 });
+
 
 jQuery(document).ready(function($) {
 
